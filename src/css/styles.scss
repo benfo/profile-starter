@@ -9,6 +9,8 @@ body {
   font-family: var(--font-sans);
   background-color: var(--base);
   color: var(--base-content);
+  counter-reset: section;
+  counter-reset: navitem;
 }
 
 header {
@@ -38,11 +40,18 @@ header {
 
       a {
         font-family: var(--font-mono);
-      }
 
-      a:hover {
-        color: rgba(var(--brand));
-        transition: 0.3s;
+        &::before {
+          counter-increment: navitem;
+          content: "0" counter(navitem) ".";
+          margin-right: 2px;
+          color: rgba(var(--brand));
+        }
+
+        &:hover {
+          color: rgba(var(--brand));
+          transition: 0.3s;
+        }
       }
     }
   }
@@ -95,3 +104,28 @@ button {
     font-size: 3rem;
   }
 }
+
+.section {
+  gap: 16px;
+  counter-increment: section;
+
+  h2 {
+    font-size: 2rem;
+    padding-bottom: 32px;
+    color: rgb(var(--white));
+    
+    &::before {
+      content: "0" counter(section) ".";
+      margin-right: 10px;
+      color: rgba(var(--brand));
+      font-family: var(--font-mono);
+    }
+  }
+}
+
+// h3::before {
+//   counter-increment: section; /* Increment the value of section counter by 1 */
+//   content: "Section " counter(section) ": "; /* Display the word 'Section ', the value of
+//                                                 section counter, and a colon before the content
+//                                                 of each h3 */
+// }
