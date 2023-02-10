@@ -113,7 +113,7 @@ button {
     font-size: 2rem;
     padding-bottom: 32px;
     color: rgb(var(--white));
-    
+
     &::before {
       content: "0" counter(section) ".";
       margin-right: 10px;
@@ -123,9 +123,17 @@ button {
   }
 }
 
-// h3::before {
-//   counter-increment: section; /* Increment the value of section counter by 1 */
-//   content: "Section " counter(section) ": "; /* Display the word 'Section ', the value of
-//                                                 section counter, and a colon before the content
-//                                                 of each h3 */
-// }
+.skills {
+  display: grid;
+  grid-template-columns: max-content max-content;
+
+  li {
+    padding: 8px;
+
+    &::before {
+      color: rgb(var(--brand));
+      margin-right: 8px;
+      content: "★";
+    }
+  }
+}
