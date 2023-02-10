@@ -7,7 +7,6 @@ html {
 
 body {
   font-family: var(--font-sans);
-  line-height: 1.5em;
   background-color: var(--base);
   color: var(--base-content);
 }
@@ -51,6 +50,8 @@ header {
 
 main {
   padding: 1rem;
+  max-width: 900px;
+  margin: auto;
   > section {
     height: calc(100vh - 50px);
     scroll-margin-top: 50px;
@@ -73,5 +74,24 @@ button {
 
   &:hover {
     background-color: rgba(var(--brand), 0.1);
+  }
+}
+
+.hero {
+  gap: 32px;
+
+  h2 {
+    color: rgba(var(--brand));
+    font-family: var(--font-mono);
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+    color: rgb(var(--white));
+  }
+
+  h4 {
+    font-size: 3rem;
   }
 }

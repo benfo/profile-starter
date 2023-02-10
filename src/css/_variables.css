@@ -1,8 +1,9 @@
 :root {
   --font-sans: Arial, Helvetica, sans-serif;
   --font-mono: monospace;
+  --white: 255, 255, 255;
   --base: #222;
   --base-content: #aaa;
-
-  --brand: 46, 139, 87;
+  
+  --brand: 0, 212, 141;  
 }
