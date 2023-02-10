@@ -1,0 +1,60 @@
+@import "./_reset.css";
+@import "./_variables.css";
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.5em;
+  background-color: var(--base);
+  color: var(--base-content);
+}
+
+header {
+  nav {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+
+    > a {
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: rgba(var(--brand));
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      a {
+        font-family: var(--font-mono);
+      }
+
+      a:hover {
+        color: rgba(var(--brand));
+        transition: 0.3s;
+      }
+    }
+  }
+}
+
+main {
+  padding: 1rem;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: transparent;
+  color: rgba(var(--brand));
+  border: 1px solid rgba(var(--brand));
+  border-radius: 4px;
+  transition: 0.3s;
+  font-size: 1rem;
+  font-family: var(--font-mono);
+
+  &:hover {
+    background-color: rgba(var(--brand), 0.1);
+  }
+}

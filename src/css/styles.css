@@ -1,9 +1,0 @@
-@import "./_reset.css";
-@import "./_variables.css";
-
-body {
-  font-family: var(--font-family);
-  line-height: 1.5em;
-  background-color: var(--base);
-  color: var(--base-content);
-}
