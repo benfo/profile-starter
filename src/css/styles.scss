@@ -1,6 +1,10 @@
 @import "./_reset.css";
 @import "./_variables.css";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-sans);
   line-height: 1.5em;
@@ -9,13 +13,18 @@ body {
 }
 
 header {
+  height: 50px;
+
   nav {
+    background-color: var(--base);
     padding: 0 16px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 50px;
+    position: fixed;
+    width: 100%;
 
     > a {
       font-size: 1.75rem;
@@ -42,6 +51,13 @@ header {
 
 main {
   padding: 1rem;
+  > section {
+    height: calc(100vh - 50px);
+    scroll-margin-top: 50px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 button {
@@ -53,6 +69,7 @@ button {
   transition: 0.3s;
   font-size: 1rem;
   font-family: var(--font-mono);
+  cursor: pointer;
 
   &:hover {
     background-color: rgba(var(--brand), 0.1);
