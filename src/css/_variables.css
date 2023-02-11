@@ -2,8 +2,33 @@
   --font-sans: Arial, Helvetica, sans-serif;
   --font-mono: monospace;
   --white: 255, 255, 255;
-  --base: rgb(0, 15, 20);
+  --base-100: rgb(0, 20, 36);
+  --base-200: rgb(12, 37, 58);
+  --base: var(--base-100);
   --base-content: rgb(171, 182, 178);
-  
-  --brand: 0, 212, 141;  
+
+  --brand: 0, 212, 141;
+
+  /* Shadows */
+  --shadow-0: 0px 1px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.16),
+    0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+  --shadow-1: 0px 1px 1px 0px rgba(0, 0, 0, 0.11),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.11), 0px 4px 4px 0px rgba(0, 0, 0, 0.11),
+    0px 6px 8px 0px rgba(0, 0, 0, 0.11), 0px 8px 16px 0px rgba(0, 0, 0, 0.11);
+  --shadow-2: 0px 1px 1px 0px rgba(0, 0, 0, 0.15),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.15),
+    0px 8px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] {
+  /* Light Theme */
+  --white: 0, 0, 0;
+  --base-100: rgb(225, 228, 225);
+  --base-200: rgb(179, 211, 182);
+  --base: var(--base-100);
+  --base-content: rgb(23, 27, 31);
+
+  --brand: 0, 129, 97;
+  --brand-picker: rgb(0, 129, 97);
 }
