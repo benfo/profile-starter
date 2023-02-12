@@ -88,3 +88,17 @@ body {
   text-shadow: 4px 4px 4px hsl(var(--base-content) / 30%);
   line-height: 1.2em;
 }
+
+.skills {
+  display: grid;
+  grid-template-columns: max-content max-content;
+}
+.skills li {
+  padding: 8px;
+}
+.skills li::before {
+  color: var(--secondary);
+  margin-right: 8px;
+  font-size: var(--font-size-2xl);  
+  content: "→";
+}
