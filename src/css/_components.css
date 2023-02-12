@@ -1,0 +1,19 @@
+.btn {
+  padding: var(--space-2) var(--space-4);
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: var(--neutral);
+  color: var(--neutral-content);
+  border-radius: var(--border-radius-base);
+}
+
+.btn-ghost {
+  border-width: 1px;
+  border-color: transparent;
+  background-color: transparent;
+  color: currentColor;
+}
+
+.btn-ghost:hover {
+  background-color: hsl(var(--base-content) / 0.2);
+}
