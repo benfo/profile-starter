@@ -3,11 +3,11 @@
   --base-100: #fff;
   --base-200: #f2f2f2;
   --base-300: #e5e6e6;
-  --base-content: 215 28% 17%;
+  --base-content: 215 28% 17%;  
 
   --primary: #6000f9;
   --primary-focus: #4b00cc;
-  --primary-content: #fff;
+  --primary-content: 0 0% 100%;
 
   --secondary: #e400baX;
   --secondary-focus: #b60095;
@@ -28,6 +28,8 @@
   This means that each size is multiplied or divided by 1.2 from the previous size,
   starting with the base size, and rounded to a multiple of 4px.
   */
+  --font-size-6xl: 3.75rem;
+  --font-size-5xl: 3rem;
   --font-size-4xl: 2.5rem;
   --font-size-3xl: 2rem;
   --font-size-2xl: 1.75rem;
@@ -36,6 +38,17 @@
   --font-size-md: 1rem;
   --font-size-sm: 0.875rem;
   --font-size-xs: 0.75rem;
+
+  /* Weights */
+  --font-weight-hairline: 100;
+  --font-weight-thin: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
 
   /* SHAPE */
   --border-radius-none: 0;
@@ -80,11 +93,11 @@
   --base-100: #2b303c;
   --base-200: #252933;
   --base-300: #21252e;
-  --base-content: 220 13% 69%;  
+  --base-content: 220 13% 69%;
 
   --primary: #6a00e7;
   --primary-focus: #5500ba;
-  --primary-content: #ffffff;
+  --primary-content: 0 0% 100%;
 
   --neutral: #1a1d24;
   --neutral-focus: #111318;
