@@ -6,6 +6,10 @@
   --nav-offset: 64px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-sans);
   background-color: var(--base-100);
@@ -99,6 +103,27 @@ body {
 .skills li::before {
   color: var(--secondary);
   margin-right: 8px;
-  font-size: var(--font-size-2xl);  
+  font-size: var(--font-size-2xl);
   content: "→";
+}
+
+.experiences h2 {
+  font-size: var(--font-size-6xl);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2em;
+  margin-bottom: var(--space-4);
+}
+
+.experiences-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: var(--space-8);
+  margin: var(--space-8) 0;
+}
+
+.card {
+  background-color: var(--base-200);
+  padding: var(--space-4);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-lg);
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,9 +15,9 @@
           <nav class="nav">
             <a class="nav-brand" href="#">ME</a>
             <div>
-              <a class="nav-item" href="#">About</a>
-              <a class="nav-item" href="#">Experience</a>
-              <a class="nav-item" href="#">Contact</a>
+              <a class="nav-item" href="#about">About</a>
+              <a class="nav-item" href="#experience">Experience</a>
+              <a class="nav-item" href="#contact">Contact</a>
               <button class="btn">Resume</button>
             </div>
           </nav>
@@ -48,7 +48,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section id="about" class="section">
         <div class="container">
           <div class="hero">
             <h2>About</h2>
@@ -81,47 +81,53 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
+      <section  id="experience" class="section">
+        <div class="container experiences">
           <h2>Experience</h2>
           <p>
             Over the past three years, [Your Name] has honed [their/their]
             skills as a web developer, working with a range of cutting-edge
             technologies.
           </p>
-          <section>
-            <h3>Company 1</h3>
-            <p>
-              At Company 1, [They/They] spent a year building and maintaining
-              complex web applications using Node.js, React, and TypeScript.
-              [They/They] developed and implemented innovative solutions that
-              improved the performance and functionality of the platform, while
-              also ensuring a seamless user experience.
-            </p>
-          </section>
 
-          <section>
-            <h3>Company 2</h3>
-            <p>
-              At Company 2, [They/They] brought [their/their] expertise in
-              front-end development to the table, using React and CSS to create
-              visually appealing and user-friendly interfaces for web
-              applications. [They/They] worked closely with designers and
-              back-end developers to ensure that all components were integrated
-              smoothly, resulting in a highly functional and efficient platform.
-            </p>
-          </section>
+          <div class="experiences-list">
+            <section class="card">
+              <h3>Company 1</h3>
+              <p>
+                At Company 1, [They/They] spent a year building and maintaining
+                complex web applications using Node.js, React, and TypeScript.
+                [They/They] developed and implemented innovative solutions that
+                improved the performance and functionality of the platform,
+                while also ensuring a seamless user experience.
+              </p>
+            </section>
 
-          <section>
-            <h3>Company 3</h3>
-            <p>
-              At Company 3, [They/They] used Node.js and TypeScript to build and
-              maintain scalable web applications. [They/They] collaborated with
-              cross-functional teams to identify and resolve technical issues,
-              and [they/they] implemented best practices in coding, testing, and
-              deployment to ensure that the platform was reliable and efficient.
-            </p>
-          </section>
+            <section class="card">
+              <h3>Company 2</h3>
+              <p>
+                At Company 2, [They/They] brought [their/their] expertise in
+                front-end development to the table, using React and CSS to
+                create visually appealing and user-friendly interfaces for web
+                applications. [They/They] worked closely with designers and
+                back-end developers to ensure that all components were
+                integrated smoothly, resulting in a highly functional and
+                efficient platform.
+              </p>
+            </section>
+
+            <section class="card">
+              <h3>Company 3</h3>
+              <p>
+                At Company 3, [They/They] used Node.js and TypeScript to build
+                and maintain scalable web applications. [They/They] collaborated
+                with cross-functional teams to identify and resolve technical
+                issues, and [they/they] implemented best practices in coding,
+                testing, and deployment to ensure that the platform was reliable
+                and efficient.
+              </p>
+            </section>
+          </div>
+
           <p>
             [Your Name]'s diverse experience and technical skills make
             [them/their] an asset to any team, and [they/they] are eager to
@@ -130,7 +136,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section  id="contact" class="section">
         <div class="container">
           <div class="hero">
             <h2>Get in touch</h2>
