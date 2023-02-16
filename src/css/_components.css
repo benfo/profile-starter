@@ -39,6 +39,14 @@
   background-color: var(--primary-focus);
 }
 
+.btn-secondary {
+  background-color: var(--secondary);
+  color: var(--secondary-content);
+}
+.btn-secondary:hover {
+  background-color: var(--secondary-focus);
+}
+
 .btn-outline {
   border-color: currentColor;
   background-color: transparent;

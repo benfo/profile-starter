@@ -9,6 +9,15 @@
     "dev": "parcel"
   },
   "devDependencies": {
-    "parcel": "2.8.0"
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "parcel": "2.8.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "clsx": "^1.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1"
   }
 }
